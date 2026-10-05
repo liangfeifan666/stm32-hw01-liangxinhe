@@ -1,18 +1,32 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
+# 构建产物
+/build/
+build/
 
-# Other files and folders
-.settings/
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+CMakeUserPresets.json
+compile_commands.json
 
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
+# 调试器工程文件（各人本地保留，不入库）
+*.jdebug
+*.jdebug.user
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+# CubeMX
+.mxproject
+*.ioc.bak
+
+# 编辑器 / 系统
+.vscode/settings.json
+.DS_Store
+Thumbs.db
+
+# 编译中间产物
+*.o
+*.d
+*.elf
+*.hex
+*.bin
+*.map
+*.list
